@@ -66,11 +66,10 @@ The optimisation algorithm is implemented using Python, NumPy, and SymPy. It eva
    ```bash
    pip install numpy sympy
    ```
-
-3. Save the code in a Python file, such as `bond_price.py`.
-4. Run it
-
-The script executes the included test cases and prints the bond valuation and replication results.
+3. Open bond_price.py and edit the example input values to test different bonds, market prices, and target cash-flow profiles.
+4. Save the code in a Python file, such as `bond_price.py`.
+5. Run it
+The script runs the calculations using your specified inputs and prints the results.
 
 ## Limitations
 
