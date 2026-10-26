@@ -36,7 +36,20 @@ The algorithm:
 - Calculates the cost of the replicating portfolio.
 - Compares the replication cost with the target bond's market price to estimate the potential arbitrage opportunity.
 The optimisation algorithm is implemented using Python, NumPy, and SymPy. It evaluates candidate portfolios and retains the lowest-cost feasible portfolio found, subject to the conditions implemented in the model.
-
+#### Inputs
+1. Individual Bond Pricing
+- face_value: The bond's face value.
+- coupun_rate: The annual coupon rate.
+- maturity: The yield or discount rate used to calculate present value.
+- years: The bond's maturity in years.
+2. Cash-Flow and Present-Value Calculations
+- face_value, coupun_rate, years: Used by bond_cashflow() to generate the bond's semiannual coupon payments and final principal repayment.
+- cash_flow, maturity: Used by present_values() to calculate the present value of each cash flow using the discount rate.
+3. Bond Portfolio Optimisation
+- bonds: Cash flows of the available bonds at each payment date.
+- prices: Market prices of the available bonds.
+- target: Cash flows to be replicated.
+- target_price: Market price of the target bond, used to compare against the minimum replication cost.
 ## Technologies Used
 
 - Python
@@ -69,6 +82,7 @@ The optimisation algorithm is implemented using Python, NumPy, and SymPy. It eva
 3. Open bond_price.py and edit the example input values to test different bonds, market prices, and target cash-flow profiles.
 4. Save the code in a Python file, such as `bond_price.py`.
 5. Run it
+
 The script runs the calculations using your specified inputs and prints the results.
 
 ## Limitations
