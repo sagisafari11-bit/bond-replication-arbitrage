@@ -36,7 +36,7 @@ The algorithm:
 - Calculates the cost of the replicating portfolio.
 - Compares the replication cost with the target bond's market price to estimate the potential arbitrage opportunity.
 The optimisation algorithm is implemented using Python, NumPy, and SymPy. It evaluates candidate portfolios and retains the lowest-cost feasible portfolio found, subject to the conditions implemented in the model.
-#### Inputs
+## Inputs
 1. Individual Bond Pricing
 - face_value: The bond's face value.
 - coupun_rate: The annual coupon rate.
